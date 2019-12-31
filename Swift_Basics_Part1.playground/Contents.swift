@@ -58,6 +58,30 @@ let π = 3.14159
 let 你好 = "你好世界"
 let 🐶🐮 = "dogcow"
 
+var friendlyWelcome = "Hello!"
+friendlyWelcome = "Bonjour!"
+
+let someLiteral = "Some Value"
+
+//Printing variables and constables.
+print("The current value of friendlyWelcome is \(friendlyWelcome) ")
+
+print("Value of someLiteral is \(🐶🐮)")
+
+//Comments
+
+//This a single line comment
+
+/* This are multiline
+ comments*/
+
+//Semicolons 
+
+
+
+
+
+
 
 
 
