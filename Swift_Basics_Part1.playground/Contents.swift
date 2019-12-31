@@ -99,10 +99,65 @@ let cat = "cat" ; print(cat)
 /*
  Integer Bounds
  
+ We can access the minimum and maximum value of each integer type with its min and max properties.
+ */
+
+let minValue = UInt8.min // minValue is equal to 0 , and is of type UInt8
+
+let maxValue = UInt8.max // maxvalue is equal to 255, and is of type UInt8
+
+
+print("Min value of UInt is \(minValue) and Max Value of UInt is \(maxValue)")
+
+/*
+ Int
+ In most cases, you don't need to pick a specific size of integer to use in your code,
+ Swift provides an additional integer type, Int, Which has the same size as the current
+ platform's native word size:
+ 
+ -> On 32-bit platform, Int is the same size as Int32.
+ -> On 64-bit platform, Int is the same size as Int64.
+ 
+ UInt
+ Swift also provides an Unsigned integer type, UInt, which has the same size as the current
+ platform's native word size:
+ -> On 32-bit platform, Int is the same size as UInt32.
+ -> On 64-bit platform, Int is the same size as UInt64.
+ 
+ */
+
+//Floating - Point Numbers:
+/*
+ Floating-point numbers are numbers witha fractional component, such as 3.14159, and -273.15
+
+ Double represents a 64-bit floating point number.
+ 
+ Float represents a 32- bit floating-point number.
+ 
+ Double has precision of at least 15 decimal digits, whereas the precision of Float can be as little 6 decimal digits.
+ 
+ In Situation Where either type would be appropriate, Double is preffered.
  */
 
 
+//Type Safety and Type Inference
+/*
+ Swift is a type-safe language, If part of code requires a String, you can't pass it Int By mistake.
+ 
+ Because swift is a type safe, it performs type checks when compiling your code and flags any mismatched types as error.
+ 
+ This enables you to catch and fix errors as early as possible in the development process.
+ 
+ Type inference:
+ 
+ If you don't specify the type of value you need, Swift uses type inference to work out the appropriate type.
+ Type inference enables a compiler to deduce the type of a particular expression automatically when it complies code ,Simply by examining the
+ values you provide.
 
+ */
+
+let someRandomValue = 42 // someRandomValue is inferred to be type Int
+let pi = 3.14 // pi is inferred to be type Double
 
 
 
