@@ -75,8 +75,31 @@ print("Value of someLiteral is \(🐶🐮)")
 /* This are multiline
  comments*/
 
-//Semicolons 
+//Semicolons
+/* Swift doesn't require you to write a semicolon(;) after each statement in code,
+ although you can do so if you want to, Semicolons are required if you want to write
+ mutiple separate statements on a single line*/
 
+let cat = "cat" ; print(cat)
+
+
+//Integers
+/*
+ Integers are whole numbers with no fractional component such as 42 and -22.
+ 
+ Integers are either signed (positive,zero,negative) or unsigned(positive or zero).
+ 
+ Swift Provides signed and unsigned integers in 8, 16, 32, and 64bit forms.
+  
+ These integers follow a naming convention similar to C, 8-bit unsined integer is : UInt8
+ 
+ and 32-bit signed interger is Int32.
+ */
+
+/*
+ Integer Bounds
+ 
+ */
 
 
 
