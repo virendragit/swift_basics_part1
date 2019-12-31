@@ -159,7 +159,41 @@ print("Min value of UInt is \(minValue) and Max Value of UInt is \(maxValue)")
 let someRandomValue = 42 // someRandomValue is inferred to be type Int
 let pi = 3.14 // pi is inferred to be type Double
 
+//Numeric Literals
 
+/*
+ Integer literals can be written as:
+ 
+ -> A decimal number, With no prefix
+ -> A binay number, with a 0b prefix
+ -> A octal number, with a 0o prefix
+ -> A hexadecimal number, with 0x prefix
+ 
+ All of these integer literals have a decimal value of 17:
+ 
+ let decimalIneger = 17
+ let dinaryInteger = 0b10001 //17 in binary notation
+ let octalInteger = 0o21   // 17 in octal notation
+ let hexadecimalInteger = 0x11 // 17 in hexadecimal notation
+ 
+ */
+
+// Numeric type conversion.
+// Integer Conversion
+/* An Int8 constant or variable can stroe numbers between -128 and 127
+ whereas UInt8 can stroe numbers between 0 to 255 */
+
+//let cannotbeNegative: UInt8 = -1
+//error
+
+//let tooBig: Int8 = Int8.max + 1
+//error
+
+let twoThousand: UInt16 = 2_000
+let one : UInt8 = 1
+let twoThousandAndOne = twoThousand + UInt16(one)
+
+print(twoThousandAndOne)
 
 
 
