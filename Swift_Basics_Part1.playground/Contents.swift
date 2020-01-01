@@ -265,6 +265,37 @@ print("The status code is \(http200Status.statusCode)")
 print("The status message is \(http200Status.description)")
 
 
+//Optionals
+
+/*
+ We use optionals in situations where a value may be absent.
+ 
+ Swift optionals let you indicate the absence of the value for any type at all,
+ without the need for special constants.
+ 
+ */
+
+let possibleNumber = "123"
+let convertedNumber = Int(possibleNumber)
+
+//nil
+
+/* You set an optional variable to a valueless state by
+assigning it the special value nil:*/
+
+var serverResponseCode: Int? = 404
+// serverResponseCode contains an actual Int value of 404
+
+serverResponseCode = nil
+//serverResponseCode now contains no value
+
+// You can't use nil with non-optional constants and variables.
+
+var surveyAnswer: String?
+// SurveyAnswer is automatically set to nil 
+
+
+
 
 
 
