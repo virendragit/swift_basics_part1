@@ -292,7 +292,16 @@ serverResponseCode = nil
 // You can't use nil with non-optional constants and variables.
 
 var surveyAnswer: String?
-// SurveyAnswer is automatically set to nil 
+// SurveyAnswer is automatically set to nil
+
+//If statement and forced Unwrapping
+
+if convertedNumber != nil {
+    
+    print("Having some value and the value is \(convertedNumber!)")
+}
+
+//Always make sure that an optional contains a non-nil value before using ! to force-unwrap its value.
 
 
 
