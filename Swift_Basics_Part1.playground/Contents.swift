@@ -202,6 +202,71 @@ let pi_value = Double(three) + pointOneFourOneFiveNine
 
 print(pi_value)
 
+//Type Aliases
+
+/*
+ Type aliases define an alternative name for an existing type.
+ 
+ Type Aliases are useful when you want to refer to an existing type by a name
+ that is contextually more appropriate, such as when working with data of specific mo
+ more appropriate, such as when working with data of a specific size from an exter
+*/
+
+typealias AudioSample = UInt16
+
+//once you define a type alias, you can use the alias anywhere you might use the orinal name
+
+var maxAmplitudeFound = AudioSample.min
+
+//Booleans
+let orangeAreOrange = true
+
+let turnipsAredelicious = false
+
+//if turnipsAredelicious {
+//    print("Mmm, tasty turnips!")
+//}else{
+//    print("Eww, turnips are horrible")
+//}
+
+
+//Tuples
+/*
+ Tuples group multiple values into a sigle compound value.
+ The values within a tuples can be of any type and don't have to be
+ of the same type as each other
+ 
+ Example: (404, "Not Found")*/
+ 
+
+let http404Error = (404, "Not Found")
+
+//tuples of type (Int, String).
+
+let (statusCode, StatusMessge) = http404Error
+
+print("The status code is \(statusCode)")
+
+print("The status message is \(StatusMessge)")
+
+let (justTheStatusCode, _) = http404Error
+
+print("The status code is \(justTheStatusCode)")
+// Prints "The status code is 404”
+
+print("The status code is \(http404Error.0)")
+
+print("The status message is \(http404Error.1)")
+
+let http200Status = (statusCode : 200 , description : "Ok")
+
+print("The status code is \(http200Status.statusCode)")
+
+print("The status message is \(http200Status.description)")
+
+
+
+
 
 
 
