@@ -195,6 +195,13 @@ let twoThousandAndOne = twoThousand + UInt16(one)
 
 print(twoThousandAndOne)
 
+//Integer and floating point Conversion
+let three = 3
+let pointOneFourOneFiveNine = 0.14159
+let pi_value = Double(three) + pointOneFourOneFiveNine
+
+print(pi_value)
+
 
 
 
